@@ -119,4 +119,4 @@ if st.button("Predict Market Value"):
 
     if response.status_code == 201:
         result = response.json()
-        st.success(f"Predicted Market Value: {result["Prediction"]}")
+        st.success(f"Predicted Market Value: €{result["Prediction"]}M")
